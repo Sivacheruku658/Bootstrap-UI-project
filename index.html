@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Explorer — Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">UI explorer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero bg-pastel-1 text-dark py-5">
+      <div class="container text-center py-5">
+        <h1 class="display-5 fw-semibold reveal">Build beautiful UIs with Bootstrap 5</h1>
+        <p class="lead mt-3 reveal">A small exploration project mixing Bootstrap components into a pastel-themed, responsive layout.</p>
+        <a href="#features" class="btn btn-primary btn-lg mt-3 reveal">Explore Features</a>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section id="features" class="container py-5">
+      <h2 class="text-center mb-4 reveal">Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card soft-card reveal">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Layouts</h5>
+              <p class="card-text">Built with Bootstrap 5 grid and utilities for flawless responsiveness.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card soft-card reveal">
+            <div class="card-body">
+              <h5 class="card-title">Components Remix</h5>
+              <p class="card-text">Navbar, carousel, cards, and form components remixed for a fresh look.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card soft-card reveal">
+            <div class="card-body">
+              <h5 class="card-title">Pastel Theme</h5>
+              <p class="card-text">A gentle pastel color system with subtle animations and hover effects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / CARDS -->
+    <section class="container py-5">
+      <h3 class="mb-4 text-center reveal">Sample Components</h3>
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Hero Example</h5>
+              <p class="card-text">Large bold hero area that invites users to learn more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Reusable Cards</h5>
+              <p class="card-text">Cards designed to fit features, testimonials, or product listings.</p>
+              <a href="#" class="btn btn-outline-primary mt-2">See sample</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-sm text-center py-4">
+            <div class="card-body">
+              <h5 class="card-title">Modals & Forms</h5>
+              <p class="card-text">Form UI wired with validation and example modal triggers.</p>
+              <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXAMPLE MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Example Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>This modal demonstrates a simple dialog—useful for alerts, forms, or confirmations.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top mt-5">
+      <div class="container py-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="text-muted">© 2025 UI explorer</div>
+        <div>
+          <a href="#" class="link-muted me-3">Privacy</a>
+          <a href="#" class="link-muted">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
